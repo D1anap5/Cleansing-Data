@@ -3,6 +3,9 @@ Cara menjalankan source code :
 2. Jalankan pada browser dengan memanggil file index.php
 3. halaman awal yang terbuka seperti pada index.jpg
 
+Bahasa Pemrograman : PHP
+Library yang dibutuhkan : php_oci8, php_oci_11g
+
 Setiap langkah dijalankan secara bertahap
 1. Membuat daftar Koleksi dengan noinduk_deposit null
 Mengambil list koleksi yang noinduk_deposit = null pada tabel collections
