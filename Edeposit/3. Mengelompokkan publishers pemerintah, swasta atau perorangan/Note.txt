@@ -1,0 +1,3 @@
+1. Buat rule yang mengelompokan penerbit pemerintah, swasta, atau perorangan
+2. Lampirkan skrip / rule atau langkah-langkah yang diperlukan di sini
+3. Lampirkan hasil seblum dan sesudah

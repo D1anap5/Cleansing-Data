@@ -1,0 +1,2 @@
+1. Perguruan tinggi, kementerian/lembaga bisa dibuat grup berdasarkan nama
+2. contoh : BPS, Universitas Indonesia

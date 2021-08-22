@@ -1,0 +1,6 @@
+Tools:
+. Bahasa Pemrograman Python
+. Python Virtual Environment
+. Python Libraries:
+	. cx_Oracle
+	. Pandas

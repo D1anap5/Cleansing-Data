@@ -1,0 +1,3 @@
+1. Lakukan query ke database untuk collections yang tidak memiliki nomor deposit namun memiliki category_id = 4
+2. simpan dalam excel
+3. lampirkan hasilnya di sini

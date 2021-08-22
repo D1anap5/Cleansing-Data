@@ -1,0 +1,3 @@
+1. ganti publisher_id pada tabel collections menjadi publisher_id yang baru
+2. hapus penerbit yang tidak diperlukan
+3. tuliskan script dan screenshoot hasil pekerjaan

@@ -1,0 +1,49 @@
+1. pada database ISBN di tabel mst_isbn tidak ada kolom yang menandakan jenis ISBN elektronik maupun ISBN cetak, sehingga perlu dilakukan sebagai berikut :
+Buat View pada sqlserver local, berikut skrip nya :
+SELECT
+  a.kd_penerbit,
+  a.kd_penerbit_dtl,
+  a.title,
+  a.kepeng creator,
+  a.tahun_terbit year,
+  a.edisi edition, 
+	a.seri,
+	CASE WHEN a.title like '%sumber elektronis%'
+	THEN 'elek'
+	ELSE 'cetak'
+	END jenis,
+	  b.keterangan,
+    a.peruntukan,
+    a.tahun_terbit,
+    (a.kd_penerbit + a.kd_penerbit_dtl) bar_val,
+    ISNULL(a.kepeng, '') kepeng,
+		a.edisi,
+		a.jml_hlm,
+		a.ketebalan,
+		a.call_number,
+		a.catatan,
+		a.media,
+		a.jejakan1,
+		a.jejakan2,
+		a.jejakan3,
+		a.jejakan4,
+		a.jejakan5,
+		a.subjek,
+		a.subjek2,
+		a.subjek3,
+		a.subjek4,
+		a.subjek5,
+  b.created_date,
+	CASE 
+    	WHEN b.received_date IS NULL 
+        THEN '0' 
+        ELSE CONVERT(VARCHAR(10), b.received_date,104) 
+    END received_date,
+  b.prefix_element + '-' + b.publisher_element + '-' + b.item_element + '-' +
+  b.check_digit AS isbnno
+FROM  
+  mst_isbn b
+  LEFT JOIN mst_penerbit_dtl a ON (a.kd_penerbit_dtl = b.kd_penerbit_dtl)
+2. Buat script untuk membandingkan ISBN pada collections dan pada View yang telah dibuat. Boleh menggunakan apa pun. Lampirkan script di sini
+3. Simpan daftar collections dalam excel, lampirkan di sini
+4. Report ke user, untuk kelanjutan data tersebut

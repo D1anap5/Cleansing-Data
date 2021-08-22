@@ -1,0 +1,4 @@
+1. lengkapi kolom access = 2
+2. Lengkapi preview dan perbaiki data preview 
+3. lengkapi city_id dengan menggunakan data dari publishers
+4. lampirkan skrip, dan bukti pekerjaan di sini

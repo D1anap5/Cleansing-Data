@@ -1,0 +1,10 @@
+collection status 1,2,3
+dihapus file yang terbaru (status dipertahankan status 2)
+
+Tools:
+. Bahasa Pemrograman Python
+. Python Virtual Environment
+. Python Libraries:
+	. Peewee
+	. Pandas
+	. Playhouse

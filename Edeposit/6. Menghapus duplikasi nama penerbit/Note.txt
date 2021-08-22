@@ -1,0 +1,10 @@
+Data update pada database hanya ada pada data 6.3.
+Csv 6.1 dan 6.2 hanya sebagai data support untuk task 9.
+
+Tools:
+. Bahasa Pemrograman Python
+. Python Virtual Environment
+. Python Libraries:
+	. Peewee
+	. Pandas
+	. Playhouse

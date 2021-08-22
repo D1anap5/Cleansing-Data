@@ -1,0 +1,3 @@
+Baca file size jika 0 Kb dianggap file rusak
+hapus dari database
+hapus dari storage

@@ -1,0 +1,5 @@
+1. Filter data pada tabel contributors yang merupakan nama orang
+2. Pindahkan data tersebut pada tabel collection_contributors
+3. Jika author belum ada, tambahkan pada tabel authors
+4. Lampirkan data sebelum dan sesudah
+5. Lampirkan langkah-langkah, query dan skrip yang digunakan di sini

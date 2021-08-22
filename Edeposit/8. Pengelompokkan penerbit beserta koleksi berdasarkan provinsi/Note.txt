@@ -1,0 +1,7 @@
+Tools:
+. Bahasa Pemrograman Python
+. Python Virtual Environment
+. Python Libraries:
+	. Peewee
+	. Pandas
+	. Playhouse
