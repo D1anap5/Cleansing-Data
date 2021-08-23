@@ -320,3 +320,4 @@ foreach ($csv8 as $data) {
     fputcsv($output, $data);
 }
 fclose($output);
+?>
