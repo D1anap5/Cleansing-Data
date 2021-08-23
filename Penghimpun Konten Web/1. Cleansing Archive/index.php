@@ -114,7 +114,7 @@ foreach ($csv1 as $data) {
             // output data of each row
             while ($row) {
                 //hapus document
-                $file_pointer = $row['location'];
+                $file_pointer = $set_file_directory . $row['location'];
                 if (!unlink($file_pointer)) {
                     $status_file = "$file_pointer cannot be deleted due to an error";
                 } else {
@@ -154,7 +154,6 @@ fclose($output);
 /*--------------------------------------------------------------------------------------
 ---------4. Hapus archive_settings dengan archive_id yang tidak dapat diakses-----------
 ---------------------------------------------------------------------------------------*/
-$set_file_directory = ""; //isi lokasi file root
 foreach ($csv1 as $data) {
     if ($data[3] == "URL Doesn't Exist") {
         $conn = new mysqli($servername, $username, $password);
