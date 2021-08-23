@@ -1,6 +1,6 @@
 <?php
 //deklarasikan connection database
-$servername = "localhost"; 
+$servername = "localhost";
 $username = "root";
 $password = "iamcak3p";
 
@@ -292,6 +292,32 @@ $file_name = "langkah-7.csv";
 $output = fopen(getcwd() . '/' . $file_name, "w");
 fputcsv($output, ["archive_id", "url", "title", "status"]);
 foreach ($csv7 as $data) {
+    fputcsv($output, $data);
+}
+fclose($output);
+
+/*--------------------------------------------------------------------------------------
+---------8. Hasil akhir archive setelah di cleansing------------------------------------
+---------------------------------------------------------------------------------------*/
+$conn = new mysqli($servername, $username, $password);
+$sql = "SELECT * FROM archives";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+}
+$conn->close();
+while ($row) {
+    $csv8[] = [
+        $row["archive_id"],
+        $row["title"],
+        $row["url"],
+    ];
+}
+//export data
+$file_name = "langkah-8-hasil-akhir.csv";
+$output = fopen(getcwd() . '/' . $file_name, "w");
+fputcsv($output, ["archive_id", "title", "url"]);
+foreach ($csv8 as $data) {
     fputcsv($output, $data);
 }
 fclose($output);
