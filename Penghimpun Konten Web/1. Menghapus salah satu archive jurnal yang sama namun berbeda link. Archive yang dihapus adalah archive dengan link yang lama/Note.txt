@@ -1,5 +1,0 @@
-Ada jurnal ganti link, contoh ui.ac.id menjadi journal.ui.ac.id, records tidak terupdate dengan link baru
-
-Hapus archive
-Hapus archive_settings
-Hapus records
