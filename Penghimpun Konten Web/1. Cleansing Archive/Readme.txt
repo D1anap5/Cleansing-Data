@@ -2,9 +2,11 @@ Bahasa pemrograman = PHP
 Library yang digunakan = php_mysql
 
 Cara menjalankan source code :
-1. Taruh folder di XAMPP atau di web server lainnya (IIS, Apache, NGINX, dll)
-2. Jalankan pada browser dengan memanggil file index.php
-3. Script akan berjalan dan otomatis menjalankan 7 tahapan cleansing.
+1. Setting koneksi database pada file "connection.php"
+2. Buka command line
+3. ketik
+    [folderphp]\php.exe script.php
+4. source code akan berjalan pada background, tunggu hingga selesai
 
 Tahapan proses cleansing archive terdiri dari 7 tahap :
 1. Membuat list archive dengan URL yang dapat di akses dan tidak dapat diakses
@@ -31,3 +33,5 @@ History hasil hapus disimpan dalam file "langkah-6.csv"
 History hasil hapus disimpan dalam file "langkah-7.csv"
 
 Hasil akhir archive yang telah dilakukan cleansing disimpan dalam file "langkah-8-hasil-akhir.csv"
+
+Log disimpan dalam folder /log/[logfile].txt
