@@ -1,6 +1,11 @@
 Bahasa pemrograman = PHP
 Library yang digunakan = php_mysql
 
+Cara menjalankan source code :
+1. Taruh folder di XAMPP atau di web server lainnya (IIS, Apache, NGINX, dll)
+2. Jalankan pada browser dengan memanggil file index.php
+3. Script akan berjalan dan otomatis menjalankan 7 tahapan cleansing.
+
 Tahapan proses cleansing archive terdiri dari 7 tahap :
 1. Membuat list archive dengan URL yang dapat di akses dan tidak dapat diakses
 Tahapan ini akan mengecek seluruh url akses archive. Jika status code = 200, maka url archive dapat di akses.
