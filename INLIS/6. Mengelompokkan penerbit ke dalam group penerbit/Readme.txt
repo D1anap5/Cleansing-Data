@@ -1,5 +1,5 @@
 Bahasa pemrograman = PHP
-Library yang digunakan = php_mysql
+Library yang digunakan = php_oci_11g
 
 Cara menjalankan source code :
 1. Setting koneksi database pada file "connection.php"
