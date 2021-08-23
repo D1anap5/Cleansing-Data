@@ -30,8 +30,8 @@ WHEN type = 1 THEN "1-10" #buku
 WHEN type = 2 THEN "1-1" #partitur
 WHEN type = 3 THEN "1-1" #peta
 WHEN type = 4 THEN "1-1" #serial
-WHEN type = 5 THEN "1-1" #audio
-WHEN type = 6 THEN "00:00-00:45" #film
+WHEN type = 5 THEN "00:00-00:45" #audio
+WHEN type = 6 THEN "00:00-01:30" #film
 END
 WHERE preview is null;
 
